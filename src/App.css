@@ -1,0 +1,177 @@
+.App {
+  text-align: center;
+  line-height: 1.2em;
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+}
+
+.App-logo {
+  /**animation: App-logo-spin infinite 20s linear; */
+  float: left;
+  height: 175px;
+  border: 3px solid white;
+}
+
+.App-header {
+  padding: 40px;
+  background-image: url('./assets/cover.jpg');
+  background-repeat: repeat-x repeat-y;
+  background-position: 0px 62%;
+  background-size: 1500px;
+  background-color: #575757;
+  color: white;
+}
+
+.App-title {
+  display: block;
+  position: relative;
+  text-align: left;
+  top: 20px;
+  left: 55px;
+  font-size: 2.25em;
+}
+
+.info {
+  position: relative;
+  top: 20px;
+  left: 55px;
+  text-align: left;
+  font-size: 0.8em;
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+.tile {
+  background-color: #222;
+  color: #222;
+  font-size: 1em;
+  float: left;
+  position: relative;
+  top: 20px;
+  left: 20px;
+  padding: 5px;
+  height: 300px;
+  width: 300px;
+  border: none;
+  margin: 20px;
+  box-shadow: none;
+}
+
+button:focus {
+  outline: none;
+}
+
+.NavBar {
+  border: 3px solid #222;
+}
+
+.Nav {
+  padding: 10px;
+  width: 20%;
+  border: 3px solid #222;
+  height: 100%;
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 1em;
+}
+
+.Nav:focus {
+  background-color: #d3d3d3;
+}
+
+.icons {
+  position: relative;
+  top: 20px;
+  left: 50px;
+  text-align: left;
+  font-size: 1.4em;
+}
+
+.icons-body {
+  position: center;
+  font-size: 1.4em;
+}
+
+.icon {
+  color: white;
+  text-decoration: none;
+  padding: 5px;
+}
+
+.body {
+  width: 60%;
+  position: relative;
+  left: 20%;
+  font-family: 'Nunito Sans', sans-serif;
+  color: #575757;
+}
+
+.main {
+  margin-top: 40px;
+}
+
+.Content {
+  margin: 20px;
+  height: 100%;
+}
+
+.link {
+  color: #222;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+@media (max-width: 550px) {
+  .App-logo {
+    float: none;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .App-title {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    text-align: center;
+  }
+  .info {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    text-align: center;
+  }
+  .icons {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    text-align: center;
+  }
+  .tile {
+    position: relative;
+    top: 15px;
+    left: 0px;
+    float: none;
+  }
+  .body {
+    width: 80%;
+    position: relative;
+    left: 10%;
+  }
+}
+
+/**@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}**/

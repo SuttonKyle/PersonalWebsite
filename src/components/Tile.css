@@ -1,0 +1,27 @@
+button:focus {
+  outline: none;
+}
+
+.tileimg {
+  height: 290px;
+  width: 290px;
+}
+
+.tileimg-faded {
+  height: 290px;
+  width: 290px;
+  opacity: 0.5;
+}
+
+.tiletext {
+  color: white;
+  font-weight: 600;
+  font-family: 'Nunito Sans', sans-serif;
+  opacity: 1;
+}
+
+.tiledesc {
+  color: white;
+  font-family: 'Nunito Sans', sans-serif;
+  opacity: 1;
+}

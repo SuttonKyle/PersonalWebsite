@@ -21,7 +21,7 @@ class App extends Component {
         <header className="App-header">
           <div className="Content">
             <img src={logo} className="App-logo" alt="logo" />
-            <h1 className="App-title"> Kyle Sutton</h1>
+            <h1 className="App-title"> Kyle Sutton TEST</h1>
             <p className="info"> Harvard College Class of 2021</p>
             <p className="info">A.B. Candidate in Computer Science</p>
             <p className="icons">

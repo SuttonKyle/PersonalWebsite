@@ -2,10 +2,8 @@ language: node_js
 node_js:
   - '8'
 sudo: false
-jobs:
-  include:
-    before_deploy:
-      - CI=false npm run build
+before_deploy:
+  - CI=false npm run build
 deploy:
   provider: s3
   access_key_id: AKIAIZ6ARLLJM5A23ENQ

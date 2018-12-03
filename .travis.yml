@@ -1,19 +1,17 @@
 language: node_js
-
 node_js:
   - '8'
-
 sudo: false
-
 jobs:
   include:
     before_deploy:
       - CI=false npm run build
     deploy:
       - provider: s3
-        access_key_id: 'AKIAIZ6ARLLJM5A23ENQ'
-        secret_access_key: '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'
-        bucket: 'kylecsutton.com'
+        access_key_id: AKIAIZ6ARLLJM5A23ENQ
+        secret_access_key:
+          secure: SjxYHVFdGUNuAVcHbBsfne5uLCAXLhhQzdB8YuYI4455gi1O2s2e/PBKtYp7qyRYao7Hr3Mk7zNgc77Xmhab0jrwWgr5azqqcPba4t+TJeZw1BYw1fNiIRNPh8/qKL5zoDXu3JRgWbceQetrUrhUc3qAVebcPFaS1ObaFsXFTsV9eW0GSXOc61V8TCXeLs9TIOUUCt5MKbMU+VeHSDMJ/QcbRYT8DsAe+GKSR+YdKJoq2MDwYluoghYCZvKZJAAlzeOCAcmbCQFNz0baMRXeZ9HAyhXWlG7Wbffkn2z0ps9r7HHljbgdjh1AeilGygGGdg/JkjPhqWsSe3KaW3idM4E4L8c/zWo1+mXxNOgy24VqO4rcd5ZNEQho+znJUGKLtdwRdekZb0hFRHIYiChz7/KsVFolGJ41N5e108xKtpPATHgAJ2b9iINNLND1G05cjB6caOE40jtX+wHmZoCD1sobjoLt/4mxAsCPriPdQ14ZtmHGX/Zi+lfjwy8qrQ0Hz1/S6hXEx9NCq49WWk6RpfIWFw/BRPVKUMgE3bQvhl8ejQ0UuRTLOLkf4zTb7yLc3DecJgV91hBTCed8C7qNDDXckjwSQ6olPeneoz/dmT3nU8NzGAIeLGrmayxsz02zNca8PtzaMuEIYPKBRsezyvZ4WwMjBiASehbbcpi1NKg=
+        bucket: kylecsutton.com
         on:
           branch: master
         local_dir: build

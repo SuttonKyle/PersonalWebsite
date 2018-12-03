@@ -1,16 +1,16 @@
 language: node_js
 node_js:
-- '8'
+  - '8'
 sudo: false
 jobs:
   include:
     before_deploy:
-    - CI=false npm run build
+      - CI=false npm run build
 deploy:
   provider: s3
   access_key_id: AKIAIZ6ARLLJM5A23ENQ
   secret_access_key:
-    secure: AJNcxmFyOiD5mbh4D7O8o104I/66PQL0LuVCwaMx2u8ETeMu+8XlLxO3xCVGbS4gZaIODJknb5kcJNdJwqVDLoEftsLATQJpsNSxN6Phf4byW9xD8gfkysHvp/KGB5manpqGIAqRlRpxQQruM3npdE76/qbrO3rg1fLWJOsx2reLpSbEFT8G6BDa1WbTmWRl/V1g3jLijt5jNdE2rWOxB12aBGcOeRpCa1wK9kyRlh7J+hibLucS2V/238Uc5qxpT6HwxBtu6UjV/qu4//fYv5uRD9tzPhsJcKm8lC6Koxu7Yz2+CIvUJsbMgWsooWw3czsYh3bmm3qDQs45ESLW2hfbaHasF4w0meZQB8WKcGUQhWH5ap1yI7Ez5BSwmRHeNaH2CwsUCk94jkU5PO2ARW/1X51FBJng07n0jJBf1Om+ipIM6OyuFkleBYoqyrlA3HWlzgretFmXQxpirdKAH2wzzwal1uGujMredal0VUOzkzXonHoJcVsUdXvT9cRn3mmTg2jASEV/TTu8wPtIQGrKP50ktxs4lnld79EMQYTv9cMLyR+9AVy8XHrsClUFd9JSg6tyB9Cb25mz+6FNN1GmzLSv5MS1Cf0kvy5J1LnvIQhs9OM/ypP0zr+oNwFgJWArQiR9zOIpYmJZkeNF745RUR4UartM2DhgH3z9NbQ=
+    secure: 'j0tGzQaXsy3B2aoj5T4AsbbACOVuTHtA+uy4sU0rEJ7hrvr4T6ksaFD/Oa8qzm4e9OjX4UuXUzoSqchgzMR5NKpiHWm6PG6dovByv43zW28UVXV3H/4jN+YogJ7OK0vAVtmbCCXq98s18nxIP5F48wpbmZnO4u1kf8Z7JPrgzsUVdnCirpK4NZnltxoCTw2eo9MVlrvlTYBokrDWy8EBotdALXSFcose6tT1lauTN+I4nuHVmMdGxiVfUZ9+Giixbk5e3usE3foRy6oxpn2LjZEAgM/o1vtXye3KSxKZ/851hfKIR/bo0fqHyGB/pL2FArBnniI8XmiOvxZ8VqNI/amluSAgJep7WkBTK4rJQpb8BL2GDCBsKaU2LTev4nY6PeYxNpjgsN9HkB+uXOgmg5VprkqxzfQqWhKB5fYqHb7B+87Dm/FvGCCbC5XSYpAPTSrSgqy+vu2Zao2aJMJJk98EL5xQm44+ZDJylSNSetVEjCxYvuKAkSn64HyM3pFOP7IFiOKE2huPx9oOmCMXKy5jDVjvT8dEgOnOwJpuF7vLhKOt5Gxrhp8mCQ1SMJpZt39QfUqP8wrrhto/SXx69MFg5m09o3DjyaxOZApxaFBzA/9hBVnUm81sFFBAjpV8kUdC4xZm4qwzDe8wxikhU5176wnEcmmjdq8nH8eqh74='
   bucket: kylecsutton.com
   on:
     branch: master

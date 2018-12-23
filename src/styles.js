@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { Flex } from 'grid-styled'
 
 export const Button = styled.button`
   padding: 10px;
@@ -10,5 +11,16 @@ export const Button = styled.button`
   background-color: ${props => (props.active ? '#d3d3d3' : 'white')};
   @media (max-width: 550px) {
     width: 100%;
+  }
+`
+
+export const Background = styled(Flex)`
+  overflow: scroll;
+  flex-direction: column;
+  width: 100%;
+  height: calc(100% - 40px);
+  padding-bottom: 20px;
+  @media (max-width: 830px) {
+    height: calc(100% - 300px);
   }
 `

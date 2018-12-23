@@ -2,7 +2,8 @@ import React, { Component } from 'react'
 import './NewModal.css'
 import './Tile.css'
 import Modal from 'react-modal'
-import Tile from './Tile.js'
+import Tile from './Tile'
+import { ModalImage, TilesRow } from './styles'
 
 class NewModal extends Component {
   constructor(props) {
@@ -15,28 +16,15 @@ class NewModal extends Component {
       link: this.props.link,
       modalIsOpen: false,
     }
-
-    this.openModal = this.openModal.bind(this)
-    this.afterOpenModal = this.afterOpenModal.bind(this)
-    this.closeModal = this.closeModal.bind(this)
   }
 
-  openModal() {
-    this.setState({ modalIsOpen: true })
-  }
+  openModal = () => this.setState({ modalIsOpen: true })
 
-  afterOpenModal() {
-    //references are now sync'd and can be accessed.
-    this.subtitle.style.color = '#f00'
-  }
-
-  closeModal() {
-    this.setState({ modalIsOpen: false })
-  }
+  closeModal = () => this.setState({ modalIsOpen: false })
 
   render() {
     return (
-      <div>
+      <TilesRow>
         <Tile
           title={this.state.title}
           img={this.state.img}
@@ -45,7 +33,6 @@ class NewModal extends Component {
         />
         <Modal
           isOpen={this.state.modalIsOpen}
-          onAfterOpen={() => this.afterOpenModal}
           onRequestClose={this.closeModal}
           className="newmodal"
           contentLabel={this.props.modalid}
@@ -53,7 +40,7 @@ class NewModal extends Component {
         >
           <h1> {this.state.title} </h1>
           <div className="column">
-            <img src={this.state.img} className="modal-image" />
+            <ModalImage src={this.state.img} />
             <p className="desc"> {this.state.desc} </p>
           </div>
           <div className="column">
@@ -72,7 +59,7 @@ class NewModal extends Component {
             </button>
           </div>
         </Modal>
-      </div>
+      </TilesRow>
     )
   }
 }

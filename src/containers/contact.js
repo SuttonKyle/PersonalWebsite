@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { ColumnContainer } from './styles'
-import Resume from '../assets/ResumeFinal.pdf'
+import Resume from '../assets/Resume_Kyle_Sutton.pdf'
 import '../App.css'
 
 class Contact extends Component {
@@ -17,8 +17,13 @@ class Contact extends Component {
           </div>
           <div className="body">
             <a className="link" href={Resume} download="KYLE_SUTTON">
-              download my resume
+              download
             </a>
+            {' '}or{' '}
+            <a className="link" href={Resume} target="_">
+              view{' '}
+            </a>
+            my resume
           </div>
         </ColumnContainer>
       </div>

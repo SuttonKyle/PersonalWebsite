@@ -18,7 +18,8 @@ button:focus {
   outline: none;
 }
 
-h1, h2 {
+h1,
+h2 {
   font-family: 'Raleway', sans-serif;
   font-weight: 300;
 }
@@ -38,28 +39,28 @@ h1, h2 {
   outline: none;
 }
 
-.modal-title{
+.modal-title {
   font-size: 3em;
 }
 
-.modal-image{
+.modal-image {
   width: 100%;
 }
 
-.desc{
+.desc {
   position: relative;
   top: 10px;
   text-align: center;
   font-family: 'Nunito Sans', sans-serif;
 }
 
-.column{
+.column {
   text-align: center;
-  float:left;
+  float: left;
   width: 50%;
 }
 
-.lang{
+.lang {
   background-color: #222;
   color: white;
   padding: 20px;
@@ -68,8 +69,8 @@ h1, h2 {
   font-family: 'Nunito Sans', sans-serif;
 }
 
-.modal-title{
-  float:left;
+.modal-title {
+  float: left;
 }
 
 @media (max-width: 600px) {

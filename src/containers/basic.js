@@ -12,11 +12,11 @@ class Basic extends Component {
           <Photo src={personalPhoto} />
           <ColumnContainer>
             <div className="body">
-              I'm a 19-year-old aspiring computer programmer from Hingham,
+              I'm a 20-year-old computer science major from Hingham,
               Massachusetts. I'm studying at Harvard currently. Besides
               programming, I love to run, ski, hike, climb, and play guitar. I
               write for Satire V, Harvard's satirical news publication, and am
-              the Gear Tsar for the Harvard Mounaineering Club.
+              the Vice President of the Harvard Mounaineering Club.
             </div>
             {/* <h3> Praise for Kyle Sutton: </h3>
             <div className="body">

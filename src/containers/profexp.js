@@ -8,11 +8,23 @@ class ProfExp extends Component {
       <div className="main">
         <h1>Professional Experience</h1>
         <ColumnContainer noLeftMargin>
-          <h2 style={{ marginTop: '0px' }}>HSA DEV (May 2018 - present)</h2>
+          <h2 style={{ marginTop: '0px' }}>Airr (May 2019 - present)</h2>
           <div className="body">
-            I spent the summer working full-time as a software engineer for HSA
-            DEV, and am currently working part-time with them over the school
-            year.
+            Airr is a podcasting startup that I joined as a software engineering consultant
+            in May 2019.  I worked with the team full-time over the summer and I'm currently
+            doing part-time work during the semester.
+          </div>
+          <div className="body">
+            Learn more about Airr{' '}
+            <a className="link" href="https://airr.io/" target="_">
+              here
+            </a>
+            .
+          </div>
+          <h2>HSA DEV (May 2018 - May 2019)</h2>
+          <div className="body">
+            I spent freshman summer working full-time as a software engineer for
+            HSA DEV, and worked part-time with them over the sophomore school year.
           </div>
           <div className="body">
             Learn more about DEV{' '}

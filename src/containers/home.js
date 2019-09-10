@@ -7,20 +7,26 @@ import rtitanic from '../assets/machinelearningR.png'
 import thekey from '../assets/thekey.jpeg'
 import NewModal from '../components/NewModal.js'
 import fnvo from '../assets/farmnivorous.png'
+import airr from '../assets/airr.png'
 
 class Home extends Component {
   render() {
     return (
       <div className="main">
         <h1> Portfolio </h1>
-        <ColumnContainer noLeftMargin>
-          <div className="body">
-            I've been working at DEV, which unfortunately means that much of my
-            work isn't publicly available due to non-disclosure agreements.
-            Here's what I can show you!
-          </div>
-        </ColumnContainer>
+
         <div className="tiles">
+          <NewModal
+            Modalid="Airr"
+            title="Airr"
+            tiledesc="A new podcast listening experience"
+            desc="I've been working on Airr for the last few months.  Airr is a podcast listener app
+            that allows the listener to save snippets of a podcast episode, or AirrQuotes, and share them
+            within the app and around the internet.  It also has a desktop site to display AirrQuotes to
+            people who don't have the app."
+            img={airr}
+            langs={['react', 'react native', 'node.js']}
+          />
           <NewModal
             Modalid="Farmnivorous"
             title="Farmnivorous"

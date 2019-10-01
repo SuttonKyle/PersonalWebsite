@@ -25,3 +25,10 @@ button:focus {
   font-family: 'Nunito Sans', sans-serif;
   opacity: 1;
 }
+
+@media(max-width: 830px) {
+  .tileimg .tileimg-faded {
+    height: 490px;
+    width: 490px;
+  }
+}

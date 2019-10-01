@@ -63,7 +63,8 @@ h3 {
   height: 300px;
   width: 300px;
   border: none;
-  margin: 20px;
+  margin: 20px 0px;
+  /* margin: 20px; */
   box-shadow: none;
 }
 
@@ -122,8 +123,11 @@ button:focus {
 }
 
 .tiles {
-  margin-left: -20px;
-  margin-right: -20px;
+  display: grid;
+  flex-flow: row wrap;
+  grid-template-columns: repeat(auto-fill, 300px);
+  grid-gap: 40px;
+  justify-content: space-between;
 }
 
 .Content {
@@ -138,6 +142,9 @@ button:focus {
 }
 
 @media (max-width: 830px) {
+  .App {
+    overflow-y: scroll;
+  }
   .App-logo {
     float: none;
     display: block;
@@ -162,14 +169,22 @@ button:focus {
     left: 0px;
     text-align: center;
   }
+  .main {
+    height: auto;
+    overflow: show;
+  }
   .tile {
     float: none;
     align-self: center !important;
+    width: 500px;
+    height: 500px;
   }
   h1 {
     line-height: 1em;
+    text-align: center;
   }
   .tiles {
+    display: flex;
     flex: 1;
     flex-direction: column;
     align-items: center !important;

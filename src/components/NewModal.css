@@ -13,10 +13,10 @@
   max-width: 150px;
   font-family: 'Nunito Sans', sans-serif;
 }
-
+/* 
 button:focus {
   outline: none;
-}
+} */
 
 h1,
 h2 {
@@ -73,8 +73,14 @@ h2 {
   float: left;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 830px) {
   .column {
     width: 100%;
+  }
+  .newmodal {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    min-height: 500px;
   }
 }

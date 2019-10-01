@@ -12,6 +12,10 @@ export const TileImage = styled(Flex)`
   background-size: cover;
   background-position-x: center;
   opacity: ${props => (props.active ? 0.5 : 1)};
+  @media (max-width: 830px) {
+    width: 490px;
+    height: 490px;
+  }
 `
 
 export const CenterItems = styled(Flex)`
@@ -79,14 +83,15 @@ export const SocialMediaContainer = styled(Flex)`
   }
 `
 
-export const ModalImage = styled(Flex)`
+export const ModalImage = styled.img`
   width: 100%;
   max-height: 400px;
-  height: 400px;
-  background-image: ${({ src }) => `url(${src})`};
-  background-size: cover;
-  background-position-y: top;
-  background-position-x: center;
+  /* height: 400px; */
+  /* background-image: ${({ src }) => `url(${src})`}; */
+  /* background-size: 100%;
+  background-repeat: no-repeat;
+  background-position-y: center;
+  background-position-x: center; */
 `
 
 export const TilesRow = styled(Flex)`

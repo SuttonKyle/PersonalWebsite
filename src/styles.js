@@ -21,6 +21,11 @@ export const Background = styled(Flex)`
   height: calc(100% - 40px);
   padding-bottom: 20px;
   @media (max-width: 830px) {
-    height: calc(100% - 300px);
+    height: auto;
+    overflow: show;
+    margin-left: 0px;
+    margin-right: 0px;
+    /* overflow: */
+    /* height: calc(100% - 300px); */
   }
 `

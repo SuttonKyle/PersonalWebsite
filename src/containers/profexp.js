@@ -21,6 +21,19 @@ class ProfExp extends Component {
             </a>
             .
           </div>
+          <h2>Blogwise (March 2019 - June 2019)</h2>
+          <div className="body">
+            I joined blogwise, an early-stage startup focused on building content marketing
+            solutions for businesses and startups, as a Software Engineer for a month or so
+            before taking up the CTO position in May.
+          </div>
+          <div className="body">
+            Learn more about blogwise{' '}
+            <a className="link" href="https://blogwise.co/" target="_">
+              here
+            </a>
+            .
+          </div>
           <h2>HSA DEV (May 2018 - May 2019)</h2>
           <div className="body">
             I spent freshman summer working full-time as a software engineer for

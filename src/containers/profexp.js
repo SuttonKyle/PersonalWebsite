@@ -29,7 +29,7 @@ class ProfExp extends Component {
           </div>
           <div className="body">
             Learn more about blogwise{' '}
-            <a className="link" href="https://blogwise.co/" target="_">
+            <a className="link" href="http://blogwise.co/" target="_">
               here
             </a>
             .

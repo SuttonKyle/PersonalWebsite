@@ -6,7 +6,7 @@
     "body-parser": "^1.18.2",
     "express": "^4.16.3",
     "grid-styled": "^5.0.2",
-    "mongodb": "^2.2.16",
+    "mongodb": "^3.1.13",
     "react": "^16.3.1",
     "react-dom": "^16.3.1",
     "react-fontawesome": "^1.6.1",

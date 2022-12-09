@@ -4,7 +4,7 @@
   "private": true,
   "dependencies": {
     "body-parser": "^1.18.2",
-    "express": "^4.16.3",
+    "express": "^4.17.3",
     "grid-styled": "^5.0.2",
     "mongodb": "^2.2.16",
     "react": "^16.3.1",
